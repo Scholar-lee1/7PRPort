@@ -12,7 +12,7 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <img src="img.jpg" alt="Client's logo" width="90px">
+                <img src="img1.png" alt="Client's logo" width="90px">
             </div>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -23,6 +23,32 @@
             <button>Contact <i class="fa fa-arrow-right"></i></button>
             <i class="fa fa-bars"></i>
         </div>
+        <div class="hero">
+            <div class="content">
+                <h1>Hey there It's <br> Abdullah Qamardeen</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, assumen
+                    da error dolorem pariatur odit qui eos minima, tempore rem simi
+                    lique eveniet reprehenderit illum magni quaerat a ducimus eaque! Deserunt, sapiente.</p>
+                <button>Say Hello <i class="fa fa-arrow-right"></i></button>
+            </div>
+            <div class="hero-image">
+                <img src="imgq1.png" alt="Hero-Image">
+            </div>
+        </div>
     </div>
+
+
+    <script>
+        let menu = document.querySelector("ul");
+        let bars = document.querySelector(".header .fa-bars")
+
+
+        bars.addEventListener("click",function(){
+            menu.classList.toggle("show")
+        })
+
+
+
+    </script>
 </body>
 </html>
