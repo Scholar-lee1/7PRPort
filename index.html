@@ -15,13 +15,12 @@
                 <img src="img1.png" alt="Client's logo" width="90px">
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#container">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#blog">Blog</a></li>
             </ul>
-            <button>Contact <i class="fa fa-arrow-right"></i></button>
-            <i class="fa fa-bars"></i>
+            <button onclick="location.href='mailto:qamardeenabdullah@gmail.com'">Contact <i class="fa fa-arrow-right"></i></button><i class="fa fa-bars"></i>
         </div>
         <div class="hero">
             <div class="content">
@@ -29,10 +28,48 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, assumen
                     da error dolorem pariatur odit qui eos minima, tempore rem simi
                     lique eveniet reprehenderit illum magni quaerat a ducimus eaque! Deserunt, sapiente.</p>
-                <button>Say Hello <i class="fa fa-arrow-right"></i></button>
-            </div>
+                <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Say Hello <i class="fa fa-arrow-right"></i></button></div>
             <div class="hero-image">
                 <img src="imgq1.png" alt="Hero-Image">
+            </div>
+        </div>
+        
+    <div id="about" class="section about-section">
+            <div class="content">
+                <h1>About Me</h1>
+                <p>I am a passionate developer and designer committed to building clean, functional, and user-centric digital experiences. With a sharp eye for detail, I turn complex problems into elegant web solutions.</p>
+                <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Read More <i class="fa fa-arrow-right"></i></button></div>
+        </div>
+
+        <div id="services" class="section services-section">
+            <h1 class="section-title">My Services</h1>
+            <div class="services-grid">
+                <div class="card">
+                    <h3>Web Design</h3>
+                    <p>Crafting beautiful, modern, and intuitive user interfaces tailored to your brand.</p>
+                </div>
+                <div class="card">
+                    <h3>Development</h3>
+                    <p>Building fast, responsive, and secure web applications using modern tech.</p>
+                </div>
+                <div class="card">
+                    <h3>SEO Optimization</h3>
+                    <p>Boosting your online visibility and ranking your website higher on search engines.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog" class="section blog-section">
+            <h1 class="section-title">Latest Blog Posts</h1>
+            <div class="services-grid">
+                <div class="card">
+                    <h3>The Future of Web Dev</h3>
+                    <p>Exploring upcoming trends, frameworks, and tools to watch out for this year.</p>
+                </div>
+                <div class="card">
+                    <h3>Mastering Responsive CSS</h3>
+                    <p>Tips and tricks to ensure your websites look stunning on absolutely any screen size.</p>
+                </div>
             </div>
         </div>
     </div>

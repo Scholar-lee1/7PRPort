@@ -257,3 +257,110 @@ button i {
         width: 100%;
 }
 }
+
+.section {
+    padding: 5rem 8%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    color: #1c1c1c;
+}
+
+.about-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.about-section .content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.about-section h1 {
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    line-height: 2.9rem;
+    margin: 10px 0;
+}
+
+.about-section p {
+    letter-spacing: 1px;
+    width: 70%;
+    margin: 10px 0;
+    margin-bottom: 2rem !important;
+    line-height: 1.6;
+}
+
+
+.about-section button {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.about-section button:after {
+    background-color: #000;
+}
+
+
+.services-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #1c1c1c;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .section {
+        padding: 4rem 8%;
+    }
+    .about-section .content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .about-section p {
+        width: 100%;
+    }
+    .services-grid {
+        flex-direction: column;
+    }
+}
